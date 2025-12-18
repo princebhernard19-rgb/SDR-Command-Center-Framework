@@ -1,0 +1,39 @@
+Project Title: SDR Command Center (Impact-First Dashboard)
+Zone 1: The Scoreboard (Top Row - Aggregate BANs)
+Focus: Current health against the monthly target of 100 SQOs.
+.Metric: Monthly SQO Pacing
+Calculation: (Count of SQOs Created) / (Current Target: 100)
+Visual: Large Number + Circular Progress Bar.
+.Metric: Projected Revenue Pipeline
+Calculation: (SQOs Created) * (Avg Deal Size: $10k) * (Win Rate: 20%)
+Visual: Large Currency Value.
+.Metric: Team Skill Score (Conv. Rate)
+Calculation: (Meetings Booked) / (Total Live Conversations)
+Visual: Percentage (Threshold: Green > 10%).
+.Metric: Data Quality Score (Connect Rate)
+Calculation: (Live Conversations) / (Total Dials)
+Visual: Percentage (Threshold: Green > 15%).
+Zone 2: Diagnostics (Middle Row - Trends & Anti-Gaming)
+Focus: Is the pipeline real, and are we going to finish the month strong?
+Chart A: The Pacing Line
+X-Axis: Days of the Month (1–30).
+Y-Axis: Cumulative SQO Count.
+Data Series: Series 1 (Actual SQOs), Series 2 (Target Trendline - Straight line to 100).
+Chart B: The Opportunity Velocity Funnel
+Stages: Dials → Connects → Meetings Booked → SQOs (Accepted) → Stage 2+ (Proposal Sent).
+Critical Data: The conversion rate from SQO to Stage 2. This is your primary shield against "recycled" or "junk" leads.
+Zone 3: Action Center (Bottom Row - Individual Performance)
+Focus: Identifying which reps need coaching vs. which need more activity.
+Table: Rep Performance & Accountability
+Rep Name	SQOs (North Star)	Conv. Rate (Skill)	Dials (Will)	Rejection Rate (Quality)
+Field Mapping:	Lead Stage = SQO	Mtg/Connect	Activity Log	Lead Disqualified / Meeting Held
+Thresholds:	Target: 15+	Target: 10%	N/A	Alert: > 20%
+The "Skill vs. Will" Scatter Plot
+X-Axis: Total Dials.
+Y-Axis: Conversion Rate (%).
+Reference Lines: Median lines for both axes to create four quadrants.
+Technical Data Mapping (Salesforce/CRM)
+SQO Definition: Lead/Opportunity Stage = "Qualified" AND "SDR Sourced" = True.
+Rejection Rate: Count of Meetings marked "Disqualified" divided by Total Meetings Booked.
+Connect: Task Type = "Call" AND Call Disposition = "Connected/Talked to Prospect."
+Velocity: Time Stamp difference between SQO Created Date and Opportunity Stage = Proposal Sent.
