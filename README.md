@@ -12,6 +12,7 @@ II. Core Metrics & R/Y/G Thresholds
 | Connect Rate | Live Talk / Total Dials | > 15% | < 8% |
 | Conv. Rate | Meetings / Connects | > 10% | < 5% |
 | Rejection Rate | Meetings DQ'd by AE | < 10% | > 20% |
+
 III. Data Architecture
 The dashboard follows a Z-Pattern Layout:
  * Scoreboard (Top): Real-time pacing against the 100 SQO monthly goal.
